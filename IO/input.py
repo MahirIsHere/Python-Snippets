@@ -1,7 +1,6 @@
 #1
-myin=input(int("Enter what number you desire"))
+myin=int(input("Enter what number you desire"))
 print(myin);
-#2
 
 mystr=input("Enter any sting: ")
 print (mystr)
