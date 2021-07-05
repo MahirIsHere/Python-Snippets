@@ -41,3 +41,7 @@ list1.remove('SpiderMan')
 
 #Print entire list
 print "\nAfter Removing SpiderMan: \n", list1
+
+#append
+fruits = ['apple', 'banana', 'cherry']
+fruits.append("orange")
