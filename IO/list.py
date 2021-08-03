@@ -45,3 +45,9 @@ print "\nAfter Removing SpiderMan: \n", list1
 #append
 fruits = ['apple', 'banana', 'cherry']
 fruits.append("orange")
+
+#constructor
+girlx=list(("Oloka","Rida","Nishat","Sajia","Pie","Aroni",True,22))
+print(girlx)
+print(type(girlx))
+
