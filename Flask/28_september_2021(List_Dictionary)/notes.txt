@@ -1,0 +1,7 @@
+Very Important
+1.cmd shell
+2.project->templates(folder)->home.html
+3.Very hard to overwrite bootstrap css so I did in line css
+4.Page Inheritance (Jija) {% extends "home.html"}
+5.{% %} -logic code python
+6.href="{{url_for('home_page')}}" #url_for(function_name) def market_page():

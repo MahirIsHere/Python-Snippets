@@ -1,0 +1,17 @@
+-->command prompt only
+>pip install Flask
+>set FLASk_APP=market.py
+>set Flask_DEBUG=1
+>flask run
+>pip install flask-sqlalchemy
+
+--->Second Step<---(python shell)
+>python
+>>from market import db
+>>db.create_all()
+>>from market import Item
+#filling up the table
+>>Item1 = Item(name="",price=,barcode=,"",description="")  #fill up all items fields
+>>db.session.add(Item1)
+>>db.session.commit()
+>>Item.query.all() #show all items

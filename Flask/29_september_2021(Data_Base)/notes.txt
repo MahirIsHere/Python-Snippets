@@ -1,0 +1,11 @@
+Very Important
+1.cmd shell
+2.project->templates(folder)->home.html
+3.Very hard to overwrite bootstrap css so I did in line css
+4.Page Inheritance (Jija) {% extends "home.html"}
+5.{% %} -logic code python
+6.href="{{url_for('home_page')}}" #url_for(function_name) def market_page():
+7.from flask_sqlalchemy import SQLAlchemy
+8.app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///market.db"  URI -uniform resource identifier
+9.install https://sqlitebrowser.org/ 
+10.Item.query.filter_by(price=500)#query
