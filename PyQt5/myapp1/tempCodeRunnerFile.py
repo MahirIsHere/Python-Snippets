@@ -1,0 +1,49 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(500, 600)
+        MainWindow.setMaximumSize(QtCore.QSize(500, 1000))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setAutoFillBackground(True)
+        self.centralwidget.setStyleSheet("")
+        self.centralwidget.setObjectName("centralwidget")
+        self.button1 = QtWidgets.QPushButton(self.centralwidget)
+        self.button1.setGeometry(QtCore.QRect(120, 290, 281, 101))
+        self.button1.setObjectName("button1")
+        self.label1 = QtWidgets.QLabel(self.centralwidget)
+        self.label1.setGeometry(QtCore.QRect(170, 190, 211, 71))
+        self.label1.setObjectName("label1")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 500, 21))
+        self.menubar.setObjectName("menubar")
+        self.menumenubar = QtWidgets.QMenu(self.menubar)
+        self.menumenubar.setObjectName("menumenubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.menubar.addAction(self.menumenubar.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.button1.setText(_translate("MainWindow", "Push Me"))
+        self.label1.setText(_translate("MainWindow", "Hello My name is \"Mahir\""))
+        self.menumenubar.setTitle(_translate("MainWindow", "menubar"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
